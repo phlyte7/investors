@@ -1,0 +1,12 @@
+/**
+ * jQuery-Ajax-PHP Sign Up Form
+ * placeholder.min
+ * Copyright (c) 2013 M. WEHBE (www.mcwehbe.com)
+ * version 1.2 4/2/2013
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ */
+
+$(document).ready(function(){if($.browser.msie){$("[placeholder]").each(function(){var e=$(this);var t=$(this);if(e.attr("placeholder")!=""){e.addClass("placeholder");if($.trim(e.val())==""){e.val(e.attr("placeholder"))}if(t.attr("type")=="password"){t.addClass("password");if($.browser.version>8){t.get(0).type="text"}else if($.browser.version<9){t.replaceWith(function(){var e=document.createElement("input");e.maxlength=20;e.type="text";e.setAttribute("id",t.attr("id"));e.setAttribute("class",t.attr("class"));e.setAttribute("placeholder",t.attr("placeholder"));e.setAttribute("name",t.attr("name"));e.setAttribute("value",t.attr("placeholder"));return e})}}}});$("[placeholder]").focus(function(){var e=$(this);if(e.val()==e.attr("placeholder")&&e.val()!="Country"){e.val("").removeClass("placeholder");if(e.hasClass("password")){e.removeClass("password");if($.browser.version>8){e.get(0).type="password"}else if($.browser.version<9){e.replaceWith(function(){var t=document.createElement("input");t.maxlength=20;t.setAttribute("type","password");t.setAttribute("id",e.attr("id"));t.setAttribute("class",e.attr("class"));t.setAttribute("placeholder",e.attr("placeholder"));t.setAttribute("name",e.attr("name"));t.setAttribute("value","");return t})}}}});$("[placeholder]").blur(function(){var e=$(this);if(e.val()==""||e.val()==e.attr("placeholder")){if($.trim(e.val())==""){e.addClass("placeholder");e.val(e.attr("placeholder"))}if(e.attr("type")=="password"){e.addClass("password");if($.browser.version>8){e.get(0).type="text"}else if($.browser.version<9){e.addClass("placeholder");e.replaceWith(function(){var t=document.createElement("input");t.maxlength=20;t.setAttribute("type","text");t.setAttribute("id",e.attr("id"));t.setAttribute("class",e.attr("class"));t.setAttribute("placeholder",e.attr("placeholder"));t.setAttribute("name",e.attr("name"));t.setAttribute("value",e.attr("placeholder"));return t})}}}})}})
